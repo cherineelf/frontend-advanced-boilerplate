@@ -1,59 +1,33 @@
-<div class="navbar-wagon">
-  <!-- Logo -->
-  <% link_to "/", class: "navbar-wagon-brand" do %>
-    <%= image_tag "lewagon.png" %>
-  <% end %>
+    <div class="navbar-simple">
 
-  <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
+      <img src="https://lewagon.github.io/navbar-livecode/images/logo.png" alt="" class="navbar-logo">
 
-    <!-- Search form -->
-    <form action="" class="navbar-wagon-search">
-      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
-      <button type="submit" class="navbar-wagon-search-btn">
-        <i class="fa fa-search"></i>
-      </button>
-    </form>
+      <div class="navbar-right hidden-xs">
+        <a href="#">Profile</a>
+        <%= link_to "Team", "team.html" %>
+        <a href="#">Dashboard</a>
+        <a href="#">Logout</a>
 
-    <!-- Text link -->
-    <a href="https://www.lewagon.com" class="navbar-wagon-item navbar-wagon-link">Wagon</a>
+        <div class="dropdown">
+          <img src="http://placehold.it/50x50" alt="" class="img-circle" id="dropdown-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <ul class="dropdown-menu" aria-labelledby="dropdown-profile">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+          </ul>
+        </div>
 
-    <!-- Text link -->
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Team</a>
-
-    <!-- Notification link-->
-    <a href="" class="navbar-wagon-item navbar-wagon-link">
-      <div class="badge-container">
-        <i class="fa fa-envelope-o"></i>
-        <div class="badge badge-blue">3</div>
       </div>
-    </a>
 
-    <!-- Profile picture and dropdown -->
-    <div class="navbar-wagon-item">
-      <div class="dropdown">
-        <img src="https://placehold.it/50x50" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
+      <div class="visible-xs">
+        <div class="dropdown">
+          <i class="fa fa-bars" id="dropdown-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></i>
+          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-
-    <!-- Button (call-to-action) -->
-    <a href="" class="navbar-wagon-item navbar-wagon-button btn">Post stuff</a>
-  </div>
-
-  <!-- Dropdown appearing on mobile only -->
-  <div class="navbar-wagon-item hidden-md hidden-lg">
-    <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
